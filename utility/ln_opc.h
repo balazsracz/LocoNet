@@ -598,8 +598,8 @@ extern "C" {
 			uint16_t lncvNumber;
 			uint16_t lncvValue;
 			uint8_t flags;
-		} data;
-	} UhlenbrockMsgPayload;
+		} __attribute__((packed)) data;
+	} __attribute__((packed)) UhlenbrockMsgPayload;
 
 	typedef struct
 	{
